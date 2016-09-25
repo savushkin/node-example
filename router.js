@@ -4,7 +4,7 @@
 
 var static = require('node-static');
 
-var file = new(static.Server)('./webapp', { cache: 0 });
+var file = new(static.Server)('./public', { cache: 0 });
 
 function route(handle, pathname, request, response) {
     if (typeof handle[pathname] === 'function') {
