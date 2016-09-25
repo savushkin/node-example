@@ -19,16 +19,5 @@ function logout(request, response) {
     response.end();
 }
 
-function index(request, response) {
-    console.log("Request handler 'index' was called.");
-
-    exec("find /", function (error, stdout, stderr) {
-        response.writeHead(200, {"Content-Type": "text/plain"});
-        response.write(stdout);
-        response.end();
-    });
-}
-
-exports.index = index;
 exports.login = login;
 exports.logout = logout;

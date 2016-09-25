@@ -7,8 +7,6 @@ var router = require("./router");
 var requestHandlers = require("./requestHandlers");
 
 var handle = {};
-handle["/"] = requestHandlers.index;
-handle["/index"] = requestHandlers.index;
 handle["/login"] = requestHandlers.login;
 handle["/logout"] = requestHandlers.login;
 

@@ -1,11 +1,19 @@
 {
-  "name": "example",
+  "name": "example-nodejs",
   "version": "0.0.42",
   "description": "simple project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm index.js"
   },
   "author": "Ivan Savushkin",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "node-static": "^0.7.8"
+  },
+  "devDependencies": {
+  },
+  "repository": {
+
+  }
 }
